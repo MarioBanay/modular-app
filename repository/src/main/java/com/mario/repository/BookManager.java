@@ -8,8 +8,14 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
 public class BookManager implements BookRepository {
-				
+
+	private static final Logger LOGGER = Logger.getLogger(BookManager.class.getName());
+
 	protected SessionFactory sessionFactory;
 
 	public void setup() {
@@ -24,7 +30,7 @@ public class BookManager implements BookRepository {
 		} 
 		
 		catch (Exception ex) {
-			ex.printStackTrace();
+			LOGGER.log(Level.INFO, ex.getMessage(), ex);
 			StandardServiceRegistryBuilder.destroy(registry);
 		}
 	}

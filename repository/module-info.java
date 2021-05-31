@@ -1,3 +1,3 @@
 module repository {
-    requires usecase;
+    requires transitive usecase;
 }

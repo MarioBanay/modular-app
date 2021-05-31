@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="consoleApp" />
         <module name="usecase" />
         <module name="tests" />
         <module name="repository" />
+        <module name="config" />
         <module name="domain" />
       </profile>
     </annotationProcessing>
