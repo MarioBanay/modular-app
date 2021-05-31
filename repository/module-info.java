@@ -1,0 +1,3 @@
+module repository {
+    requires usecase;
+}

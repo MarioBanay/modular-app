@@ -1,3 +1,4 @@
 module usecase {
-    requires domain;
+    exports com.mario.usecase;
+    requires transitive domain;
 }

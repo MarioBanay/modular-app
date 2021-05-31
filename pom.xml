@@ -12,6 +12,7 @@
         <module>domain</module>
         <module>usecase</module>
         <module>tests</module>
+        <module>repository</module>
     </modules>
     <packaging>pom</packaging>
 

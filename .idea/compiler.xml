@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="usecase" />
         <module name="tests" />
+        <module name="repository" />
         <module name="domain" />
       </profile>
     </annotationProcessing>
