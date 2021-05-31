@@ -14,7 +14,7 @@
         <module>tests</module>
         <module>repository</module>
         <module>config</module>
-        <module>application/consoleApp</module>
+        <module>application/console-app</module>
     </modules>
     <packaging>pom</packaging>
 
