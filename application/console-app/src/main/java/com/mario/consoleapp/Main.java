@@ -1,4 +1,4 @@
-package com.mario.consoleApp;
+package com.mario.consoleapp;
 
 import com.mario.config.ConsoleAppConfig;
 import com.mario.entity.BookEntity;
