@@ -1,0 +1,5 @@
+# Project exclude paths
+/domain/target/
+/target/
+/tests/target/
+/usecase/target/
