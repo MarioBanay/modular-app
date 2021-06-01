@@ -1,8 +1,9 @@
-package com.mario.config;
+package com.mario.config.console;
 
 import com.mario.repository.BookManager;
 import com.mario.usecase.BookRepository;
 import com.mario.usecase.CreateBook;
+import com.mario.usecase.GetBook;
 
 public class ConsoleAppConfig {
 
@@ -11,4 +12,10 @@ public class ConsoleAppConfig {
     public CreateBook createBook() {
         return new CreateBook(repository);
     }
+
+    public GetBook getBook(){
+        return new GetBook(repository);
+    }
+
+
 }

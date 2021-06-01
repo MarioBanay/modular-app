@@ -50,18 +50,6 @@ public class BookManager implements BookRepository {
 		session.close();
 	}
 
-	public Book read() {
-		Session session = sessionFactory.openSession();
-
-		long bookId = 23;
-		
-		Book book = session.get(Book.class, bookId);
-		session.close();
-
-		return book;
-
-	}
-
 	protected void update() {
 		Book book = new Book();
 		book.setId(10);
@@ -91,6 +79,16 @@ public class BookManager implements BookRepository {
 		session.close();
 	}
 
+	public Book read(long id) {
+		Session session = sessionFactory.openSession();
+
+		Book book = session.get(Book.class, id);
+		session.close();
+
+		return book;
+
+	}
+
 	@Override
 	public BookEntity create(BookEntity book) {
 		setup();
@@ -105,4 +103,16 @@ public class BookManager implements BookRepository {
 		exit();
 		return null;
 	}
+
+	@Override
+	public BookEntity getBook(long id) {
+		setup();
+
+		Book book = read(id);
+		BookEntity bookEntity = new BookEntity(book.getTitle(), book.getAuthor(), book.getPrice());
+
+		return bookEntity;
+	}
+
+
 }

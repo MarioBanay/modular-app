@@ -6,4 +6,6 @@ public interface BookRepository {
 
     BookEntity create(BookEntity book);
 
+    BookEntity getBook(long id);
+
 }
