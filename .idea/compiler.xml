@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="web-app" />
         <module name="usecase" />
         <module name="tests" />
+        <module name="web" />
         <module name="domain" />
         <module name="console-app" />
         <module name="repository" />
@@ -17,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="module1" target="11" />
+      <module name="webapp" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
